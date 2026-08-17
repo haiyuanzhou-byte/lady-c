@@ -5,6 +5,7 @@ theme:
   language: zh
   palette:
     scheme: default
+  favicon: img/favicon.png
 
 extra_css:
   - stylesheets/extra.css
