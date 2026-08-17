@@ -1,0 +1,70 @@
+/* ============================================
+   Lady C 个人网站自定义样式
+   ============================================ */
+
+/* ----- 全站小猫背景 ----- */
+body {
+  background: url("../img/cat-bg.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
+
+/* 主内容区透明，露出小猫背景 */
+.md-main {
+  background: transparent;
+}
+
+/* 内容区和侧边栏加半透明白底，保证文字清晰可读 */
+.md-content,
+.md-sidebar {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+/* ----- 主页大字标题：字母逐个弹出 ----- */
+.hero {
+  min-height: 62vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(4.5rem, 14vw, 10rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin: 0;
+  color: #2b2b2b;
+  text-shadow:
+    0 3px 14px rgba(255, 255, 255, 0.95),
+    0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+.hero-title span {
+  display: inline-block;
+  opacity: 0;
+  animation: pop-in 0.65s cubic-bezier(0.2, 1.5, 0.4, 1) forwards;
+  animation-delay: calc(var(--d) * 0.16s);
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateY(40px);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.hero-sub {
+  font-size: 1.3rem;
+  color: #666;
+  letter-spacing: 0.25em;
+  margin-top: 1.5rem;
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.9);
+}
