@@ -13,6 +13,11 @@ body {
   background: transparent;
 }
 
+/* 去掉页面底部的"上一篇/下一篇"白色横条 */
+.md-footer {
+  display: none;
+}
+
 /* 内容区和侧边栏加半透明白底，保证文字清晰可读 */
 .md-content,
 .md-sidebar {
