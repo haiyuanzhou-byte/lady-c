@@ -32,6 +32,11 @@ body {
   color: #000;
 }
 
+/* 遮罩层收起时立刻缩小消失，避免刚关抽屉时连点汉堡被它吞掉 */
+.md-overlay {
+  transition: opacity 0.25s;
+}
+
 /* ----- 顶部栏：紫色变透明，文字变棕色 ----- */
 .md-header {
   background: transparent;
