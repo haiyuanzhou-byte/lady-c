@@ -10,6 +10,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/extra.js
+
 nav:
   - 主页: index.md
   - 经验贴: experience/index.md
