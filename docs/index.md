@@ -6,7 +6,9 @@
   <span style="--d:7">C</span>
 </h1>
 
-<p class="hero-sub">欢迎来到我的个人网站</p>
+<p class="hero-sub">
+  <span style="--d:10">欢</span><span style="--d:11">迎</span><span style="--d:12">来</span><span style="--d:13">到</span><span style="--d:14">我</span><span style="--d:15">的</span><span style="--d:16">个</span><span style="--d:17">人</span><span style="--d:18">空</span><span style="--d:19">间</span>
+</p>
 
 </div>
 

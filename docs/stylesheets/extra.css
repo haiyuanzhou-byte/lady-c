@@ -104,7 +104,8 @@ body {
     0 0 60px rgba(255, 255, 255, 0.8);
 }
 
-.hero-title span {
+.hero-title span,
+.hero-sub span {
   display: inline-block;
   opacity: 0;
   animation: pop-in 0.8s ease-in-out forwards;
